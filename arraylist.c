@@ -20,6 +20,10 @@ ArrayList *createList(void) {
 }
 
 void append(ArrayList * l, void * data){
+  
+  l->size->data=data;
+  l->size++;
+  
 
 }
 
