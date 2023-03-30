@@ -6,3 +6,15 @@ Thu 30 Mar 2023 03:29:53 PM UTC:
  tests:  0|6
 total_score: 0/70
 31611cc
+Thu 30 Mar 2023 03:32:39 PM UTC: 
+ arraylist.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:18:3: error: ‘lista’ undeclared (first use in this function); did you mean ‘list’?
+   18 |   lista->data=(void**)calloc(lista->capacity,sizeof(void));
+      |   ^~~~~
+      |   list
+arraylist.c:18:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+b288765
