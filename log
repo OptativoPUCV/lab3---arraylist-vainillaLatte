@@ -261,3 +261,11 @@ arraylist.c:32:13: error: invalid type argument of unary ‘*’ (have ‘int’
       |             ^~
 Compilation failed
 5c60872
+Thu 30 Mar 2023 03:52:51 PM UTC: 
+ arraylist.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+/nix/store/v8imx1nvyz0hgvx9cbcmh6gp4ngw3ffj-binutils-2.35.1/bin/ld: /tmp/ccWbCczh.o: in function `append':
+test.c:(.text+0x94): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
+Compilation failed
+c74c46d
