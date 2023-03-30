@@ -269,3 +269,13 @@ test.c:(.text+0x94): undefined reference to `pow'
 collect2: error: ld returned 1 exit status
 Compilation failed
 c74c46d
+Thu 30 Mar 2023 03:53:11 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c:5:10: fatal error: cmath: No such file or directory
+    5 | #include <cmath>
+      |          ^~~~~~~
+compilation terminated.
+Compilation failed
+81e4290

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <assert.h>
 #include "arraylist.h"
-#include <math.h>
+#include <cmath>
 
 //normal array
 typedef struct ArrayList {
