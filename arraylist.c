@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <assert.h>
 #include "arraylist.h"
-#include <cmath>
+
+
 
 //normal array
 typedef struct ArrayList {
@@ -30,7 +31,7 @@ void append(ArrayList * l, void * data){
   else{
     //
     l->data[l->size]=data;
-    pow(l->size,2);
+    l->size++;
     l->capacity++;
   }
 }
