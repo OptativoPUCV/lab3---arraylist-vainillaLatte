@@ -112,3 +112,20 @@ arraylist.c:30:12: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 99ecf35
+Thu 30 Mar 2023 03:38:53 PM UTC: 
+ arraylist.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:30:5: error: statement with no effect [-Werror=unused-value]
+   30 |     l
+      |     ^
+arraylist.c:30:6: error: expected ‘;’ before ‘}’ token
+   30 |     l
+      |      ^
+      |      ;
+   31 |   }
+      |   ~   
+cc1: all warnings being treated as errors
+Compilation failed
+e8358fd
