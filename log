@@ -291,3 +291,14 @@ Thu 30 Mar 2023 03:53:50 PM UTC:
  tests:  2|5
 total_score: 15/70
 1ca3fd4
+Thu 30 Mar 2023 03:54:11 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:29:20: error: ‘ArrayList’ {aka ‘struct ArrayList’} has no member named ‘capacidad’; did you mean ‘capacity’?
+   29 |     l->capacity=l->capacidad*2;
+      |                    ^~~~~~~~~
+      |                    capacity
+Compilation failed
+ddfcc89
