@@ -59,3 +59,14 @@ arraylist.c:24:11: error: void value not ignored as it ought to be
 cc1: all warnings being treated as errors
 Compilation failed
 c5ac29a
+Thu 30 Mar 2023 03:36:25 PM UTC: 
+ arraylist.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:27:24: error: ‘ArrayList’ {aka ‘struct ArrayList’} has no member named ‘dara’; did you mean ‘data’?
+   27 |     l->data=realloc(l->dara,l->size * sizeof(void*));
+      |                        ^~~~
+      |                        data
+Compilation failed
+1155d37
