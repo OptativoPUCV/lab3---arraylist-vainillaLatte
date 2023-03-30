@@ -26,10 +26,10 @@ void append(ArrayList * l, void * data){
     l->data=(void*)realloc(l->data,l->size * sizeof(void*));
     l->capacity++;
   }
-  else{
+  /*else{
     l->size++;
     l->data=data;
-  }
+  }*/
 
 
 }
