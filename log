@@ -129,3 +129,9 @@ arraylist.c:30:6: error: expected ‘;’ before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 e8358fd
+Thu 30 Mar 2023 03:39:05 PM UTC: 
+ arraylist.c | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+ tests:  1|5
+total_score: 10/70
+0af8bc6
