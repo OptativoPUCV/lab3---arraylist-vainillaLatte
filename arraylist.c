@@ -42,8 +42,9 @@ void push(ArrayList * l, void * data, int i){
   {
     l->data=(void*)realloc(l->data,l->size * sizeof(void*));
     l->data[i]=data;
-    l->capacity++;
-    l->size++;
+    if(i<l->size)
+      l->capacity*=2
+      l->size++;
  
   }
 
