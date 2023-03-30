@@ -98,3 +98,17 @@ arraylist.c:30:12: error: assignment to ‘int’ from ‘void *’ makes intege
 cc1: all warnings being treated as errors
 Compilation failed
 1c7ba81
+Thu 30 Mar 2023 03:37:37 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:30:12: error: comparison between pointer and integer [-Werror]
+   30 |     l->size==data;
+      |            ^~
+arraylist.c:30:12: error: statement with no effect [-Werror=unused-value]
+   30 |     l->size==data;
+      |     ~~~~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+99ecf35
