@@ -15,7 +15,7 @@ ArrayList *createList(void) {
   list = (ArrayList *)calloc(1,sizeof(ArrayList));
   list->capacity=2;
   list->size=0;
-  lista->data=(void**)calloc(lista->capacity,sizeof(void));
+  list->data=(void**)calloc(list->capacity,sizeof(void));
     return list;
 }
 

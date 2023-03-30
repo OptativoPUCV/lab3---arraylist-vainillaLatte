@@ -18,3 +18,9 @@ arraylist.c:18:3: error: ‘lista’ undeclared (first use in this function); di
 arraylist.c:18:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 b288765
+Thu 30 Mar 2023 03:32:51 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+30b9cc7
