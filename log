@@ -557,3 +557,9 @@ arraylist.c:65:10: error: ‘data’ may be used uninitialized in this function 
 cc1: all warnings being treated as errors
 Compilation failed
 0fde10b
+Fri 31 Mar 2023 02:25:17 AM UTC: 
+ arraylist.c | 41 ++++++++++++++++++++++++++++-------------
+ 1 file changed, 28 insertions(+), 13 deletions(-)
+ tests:  12|1
+total_score: 60/70
+7e0ff45
