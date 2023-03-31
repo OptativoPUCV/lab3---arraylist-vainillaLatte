@@ -473,3 +473,14 @@ Fri 31 Mar 2023 02:09:51 AM UTC:
  tests:  5|3
 total_score: 30/70
 a8df5e3
+Fri 31 Mar 2023 02:10:46 AM UTC: 
+ arraylist.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘get’:
+arraylist.c:65:10: error: ‘data’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   65 |   void **data;
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+447fd20
