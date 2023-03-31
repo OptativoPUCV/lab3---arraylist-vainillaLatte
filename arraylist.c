@@ -96,7 +96,6 @@ int get_size(ArrayList * l){
 void clean(ArrayList * l)
 {
   l->capacity = 2;
-  l->size = 0;
+  l->size = 2;
   l->data = (void **)realloc(l->data, sizeof(void *) * l->capacity);
-  l->size = 0;
 }
