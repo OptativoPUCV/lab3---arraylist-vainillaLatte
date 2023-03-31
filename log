@@ -515,3 +515,23 @@ arraylist.c:76:12: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 5d88be9
+Fri 31 Mar 2023 02:11:47 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘get’:
+arraylist.c:70:10: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   70 |     data =(l->data[i]);
+      |          ^
+arraylist.c:74:10: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   74 |     data =(l->data[l->size--]);
+      |          ^
+arraylist.c:76:12: error: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   76 |     return data;
+      |            ^~~~
+arraylist.c:76:12: error: ‘data’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   76 |     return data;
+      |            ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+881f90d
