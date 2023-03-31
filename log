@@ -495,3 +495,23 @@ arraylist.c:65:9: error: ‘data’ may be used uninitialized in this function [
 cc1: all warnings being treated as errors
 Compilation failed
 eb04ddf
+Fri 31 Mar 2023 02:11:39 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘get’:
+arraylist.c:65:8: error: variable or field ‘data’ declared void
+   65 |   void data;
+      |        ^~~~
+arraylist.c:70:10: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   70 |     data =(l->data[i]);
+      |          ^
+arraylist.c:74:10: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   74 |     data =(l->data[l->size--]);
+      |          ^
+arraylist.c:76:12: error: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   76 |     return data;
+      |            ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5d88be9
