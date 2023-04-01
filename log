@@ -627,3 +627,8 @@ arraylist.c:28:53: error: invalid type argument of unary ‘*’ (have ‘int’
       |                                                     ^~~~~~~~~~~~
 Compilation failed
 d5ab0fb
+Sat 01 Apr 2023 02:00:51 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+94e9d42
