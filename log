@@ -677,3 +677,13 @@ arraylist.c:29:29: error: expected ‘;’ before ‘}’ token
       |   ~                          
 Compilation failed
 d780a79
+Sat 01 Apr 2023 02:02:56 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:28:54: error: invalid type argument of unary ‘*’ (have ‘int’)
+   28 |     l->data = (void**) realloc(l->data,sizeof((void)**l->capacity));
+      |                                                      ^~~~~~~~~~~~
+Compilation failed
+3233609
